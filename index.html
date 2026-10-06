@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Prediction App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="weather-app">
+        <aside class="side-bar">
+            <div class="search-box">
+                <input type="text" id="cityInput" placeholder="Search...">
+                <button id="searchBtn">⌕</button>
+            </div>
+
+            <div class="side-icon">
+                <img id="mainIcon" src="https://i.ibb.co/kBd2NTS/39.png" alt="Weather">
+            </div>
+
+            <div class="current-weather">
+                <div class="main-temp"><span id="currentTemp">--</span><sup>°C</sup></div>
+                <div id="currentDate">--</div>
+                <hr>
+                <p id="conditionText">--</p>
+                <p>Perc - <span id="rainChance">--</span>%</p>
+            </div>
+
+            <div class="location" id="locationName">Muktinath, Nepal</div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="tabs">
+                    <button id="todayBtn">Today</button>
+                    <button id="weekBtn" class="active">Week</button>
+                </div>
+
+                <div class="unit-buttons">
+                    <button id="celsiusBtn" class="selected">°C</button>
+                    <button id="fahrenheitBtn">°F</button>
+                </div>
+            </header>
+
+            <section id="forecastArea"></section>
+
+            <h2>Today's Highlights</h2>
+
+            <section class="highlights">
+                <div class="highlight-card">
+                    <h3>UV Index</h3>
+                    <div class="highlight-value" id="uvIndex">--</div>
+                    <p id="uvText">--</p>
+                </div>
+
+                <div class="highlight-card">
+                    <h3>Wind Status</h3>
+                    <div class="highlight-value" id="windStatus">--</div>
+                    <p>km/h</p>
+                </div>
+
+                <div class="highlight-card">
+                    <h3>Sunrise &amp; Sunset</h3>
+                    <div class="highlight-value small" id="sunrise">--</div>
+                    <p id="sunset">--</p>
+                </div>
+
+                <div class="highlight-card">
+                    <h3>Humidity</h3>
+                    <div class="highlight-value" id="humidity">--</div>
+                    <p id="humidityText">--</p>
+                </div>
+
+                <div class="highlight-card">
+                    <h3>Visibility</h3>
+                    <div class="highlight-value" id="visibility">--</div>
+                    <p>Very Clear Air</p>
+                </div>
+
+                <div class="highlight-card">
+                    <h3>Air Quality</h3>
+                    <div class="highlight-value" id="airQuality">--</div>
+                    <p id="airText">Good 👌</p>
+                </div>
+            </section>
+
+            <footer>Weather Prediction App by <span>ADARSHA HELVAR</span></footer>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
